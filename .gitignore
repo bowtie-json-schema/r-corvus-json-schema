@@ -1,0 +1,4 @@
+# add ignored files specific to test harness
+.Rhistory
+.RData
+.Rproj.user/
