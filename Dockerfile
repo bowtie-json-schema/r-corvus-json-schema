@@ -2,7 +2,7 @@
 # this tag, which Dependabot keeps up to date; the suffix is the R it is built for.
 FROM ghcr.io/corvus-dotnet/corvus-json-schema-r:0.1.2-r4.6 AS corvus
 
-FROM rocker/r-ver:4.6.1
+FROM rocker/r-ver:4.6.2
 # The binary package installs without a Rust toolchain.
 RUN --mount=type=bind,from=corvus,source=/corvus-json-schema,target=/tmp/corvus \
     R CMD INSTALL /tmp/corvus/corvusjsonschema_*.tar.gz \
