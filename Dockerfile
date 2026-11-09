@@ -1,6 +1,6 @@
 # The package, as released (src-r in Corvus.JsonSchema), built for R 4.6, the R of the image below. Its version is
 # this tag, which Dependabot keeps up to date; the suffix is the R it is built for.
-FROM ghcr.io/corvus-dotnet/corvus-json-schema-r:0.1.3-r4.6 AS corvus
+FROM ghcr.io/corvus-dotnet/corvus-json-schema-r:0.1.4-r4.6 AS corvus
 
 FROM rocker/r-ver:4.6.2
 # The binary package installs without a Rust toolchain.
